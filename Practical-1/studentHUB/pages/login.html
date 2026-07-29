@@ -1,32 +1,46 @@
-<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - StudentHub</title>
-  </head>
-  <body>
-    <header>
-      <a href="../home.html">StudentHub</a>
-      <nav>
-        <a href="features.html">Features</a>
-        <a href="about.html">About</a>
-        <a href="contact-help.html">Contact/Help</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - StudentHub</title>
+</head>
+<body>
 
-    <main>
-      <section>
-        <p>Choose Role</p>
-        <h1>Login</h1>
-        <p>Select a dashboard to continue into the portal wireframe.</p>
-      </section>
+  <header>
+    <a href="../home.html">StudentHub</a>
 
-      <section>
-        <a href="student/dashboard.html">Student Dashboard</a>
-        <a href="faculty/dashboard.html">Faculty Dashboard</a>
-        <a href="admin/dashboard.html">Admin Dashboard</a>
-      </section>
-    </main>
-  </body>
+    <nav>
+      <a href="features.html">Features</a>
+      <a href="about.html">About</a>
+      <a href="contact-help.html">Contact/Help</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Student Login</h1>
+    <p>Enter your enrollment number and password to continue.</p>
+
+    <form action="student/dashboard.html">
+      <label for="enrollment">Enrollment Number</label><br>
+      <input type="text" id="enrollment" name="enrollment" required><br><br>
+
+      <label for="password">Password</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <p>Not registered? <a href="register.html">Register here</a></p>
+  </main>
+
+  <footer>
+    <p>StudentHub Portal</p>
+    <p>Email: support@studenthub.com</p>
+    <p>Contact Admin: admin@studenthub.com</p>
+    <p>&copy; 2026 StudentHub. All rights reserved.</p>
+  </footer>
+
+</body>
 </html>
