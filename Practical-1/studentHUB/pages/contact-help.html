@@ -4,21 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact/Help - StudentHub</title>
+  <link rel="stylesheet" href="../css/common.css">
 </head>
 <body>
 
-  <header>
-    <a href="../home.html">StudentHub</a>
+  <header class="site-header">
+    <div class="container header-controls">
+      <h1><a href="../home.html">StudentHub</a></h1>
+      <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle light and dark theme">Dark Mode</button>
+      <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation">&#9776; Menu</button>
 
-    <nav>
-      <a href="features.html">Features</a>
-      <a href="about.html">About</a>
-      <a href="contact-help.html">Contact/Help</a>
-      <a href="login.html">Login</a>
-    </nav>
+      <nav id="main-navigation" class="main-nav" aria-label="Main Navigation">
+        <a href="../home.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="contact-help.html" aria-current="page">Contact/Help</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="container">
     <section>
       <h1>Contact/Help</h1>
       <p>If you need help using StudentHub, you can contact the support team using the details below or send your message through the help form.</p>
@@ -38,10 +46,46 @@
       <p>Students, faculty members, and administrators can all use this page for support.</p>
     </section>
 
+    <section aria-label="Frequently asked questions">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button type="button" class="faq-question" aria-controls="faq-answer-1" aria-expanded="true">How do I log in to StudentHub?</button>
+          <div class="faq-answer" id="faq-answer-1">
+            <p>Use your registered college email and password on the login page. If you are a new student, first complete the registration form.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-controls="faq-answer-2" aria-expanded="false">Where can I see my courses and timetable?</button>
+          <div class="faq-answer" id="faq-answer-2">
+            <p>After login, visit the student dashboard or the timetable and courses pages from the student portal navigation.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-controls="faq-answer-3" aria-expanded="false">How do I check my assignment deadlines?</button>
+          <div class="faq-answer" id="faq-answer-3">
+            <p>Open the assignments page from the student dashboard where the latest assignment details and submission deadlines are listed.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-controls="faq-answer-4" aria-expanded="false">What should I do if I forget my password?</button>
+          <div class="faq-answer" id="faq-answer-4">
+            <p>Please contact the StudentHub support team through this help page or use the admin email mentioned in the contact section.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-controls="faq-answer-5" aria-expanded="false">Can I access notices and event information on the portal?</button>
+          <div class="faq-answer" id="faq-answer-5">
+            <p>Yes. StudentHub provides notices, academic updates, and event information so students can stay informed about college activities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section>
       <h2>Send a Message</h2>
 
-      <form action="#">
+      <form action="contact-help.html" method="get">
         <label for="name">Name</label><br>
         <input type="text" id="name" name="name" required><br><br>
 
@@ -54,14 +98,16 @@
         <button type="submit">Send Message</button>
       </form>
     </section>
+    <p><a class="button" href="login.html">Login to Access Student Portal</a></p>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>StudentHub Portal</p>
     <p>Email: support@studenthub.com</p>
     <p>Contact Admin: admin@studenthub.com</p>
     <p>&copy; 2026 StudentHub. All rights reserved.</p>
   </footer>
 
+  <script src="../js/ui.js"></script>
 </body>
 </html>

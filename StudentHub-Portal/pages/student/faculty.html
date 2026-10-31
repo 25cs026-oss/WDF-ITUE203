@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faculty Directory - StudentHub</title>
+  <link rel="stylesheet" href="../../css/common.css" />
+  <link rel="stylesheet" href="../../css/grid.css" />
+  <script src="../../js/auth.js" defer></script>
+  <script src="../../js/ui.js" defer></script>
+</head>
+<body data-protected="true">
+  <header class="site-header"><div class="container">
+    <h1><a href="../../home.html">StudentHub</a></h1>
+      <div class="header-controls">
+        <button type="button" class="theme-toggle" data-theme-toggle>Dark Mode</button>
+        <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation">&#9776; Menu</button>
+      </div>
+    <nav id="main-navigation" class="main-nav" aria-label="Authenticated Navigation"><a href="dashboard.html">Dashboard</a><a href="profile.html">Profile</a><a href="courses.html">Courses</a><a href="faculty.html" aria-current="page">Faculty</a><a href="attendance-tracking.html">Attendance</a><a href="assignments.html">Assignments</a><a href="results.html">Results</a><a href="timetable.html">Timetable</a><a href="notices.html">Notices</a><a href="resources.html">Resources</a><button type="button" id="logoutButton" class="logout-button">Logout</button></nav>
+  </div></header>
+
+  <main class="container">
+    <section class="page-title">
+      <h2>Faculty Directory</h2>
+      <p>Find faculty members and their academic contact details.</p>
+      <p><strong>Faculty contact information shown on this practical website is sample data created for academic demonstration.</strong></p>
+    </section>
+    <section class="content-card">
+      <div class="faculty-grid">
+        <article class="faculty-card">
+          <h3>Harshul Yagnik Sir</h3><p><strong>Subject:</strong> Computer Networking</p>
+          <p>Guides students in networking fundamentals, TCP/IP models, network devices, topologies, IP addressing, and practical work using Cisco Packet Tracer.</p>
+          <p><strong>Email:</strong> <a href="mailto:harshul.yagnik@studenthub-demo.edu">harshul.yagnik@studenthub-demo.edu</a></p><p><strong>Office Hours:</strong> Monday, 11:00 AM to 1:00 PM</p>
+        </article>
+        <article class="faculty-card">
+          <h3>Siddharth Shah Sir</h3><p><strong>Subject:</strong> Java Object-Oriented Programming</p>
+          <p>Teaches Java concepts such as classes, objects, constructors, inheritance, abstraction, interfaces, exception handling, and collections.</p>
+          <p><strong>Email:</strong> <a href="mailto:siddharth.shah@studenthub-demo.edu">siddharth.shah@studenthub-demo.edu</a></p><p><strong>Office Hours:</strong> Tuesday, 2:00 PM to 4:00 PM</p>
+        </article>
+        <article class="faculty-card">
+          <h3>Vidisha Ma’am</h3><p><strong>Subject:</strong> Data Structures and Algorithms</p>
+          <p>Guides students in arrays, linked lists, stacks, queues, trees, searching, sorting, algorithm analysis, and problem-solving techniques.</p>
+          <p><strong>Email:</strong> <a href="mailto:vidisha.dsa@studenthub-demo.edu">vidisha.dsa@studenthub-demo.edu</a></p><p><strong>Office Hours:</strong> Wednesday, 10:00 AM to 12:00 PM</p>
+        </article>
+        <article class="faculty-card">
+          <h3>Shrusti Ma’am</h3><p><strong>Subject:</strong> WDF – Web Development Framework</p>
+          <p>Teaches responsive web development using HTML5, CSS3, Flexbox, CSS Grid, Bootstrap, JavaScript fundamentals, and reusable website layouts.</p>
+          <p><strong>Email:</strong> <a href="mailto:shrusti.wdf@studenthub-demo.edu">shrusti.wdf@studenthub-demo.edu</a></p><p><strong>Office Hours:</strong> Thursday, 1:00 PM to 3:00 PM</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><p>&copy; 2026 StudentHub. All Rights Reserved.</p></footer>
+</body>
+</html>

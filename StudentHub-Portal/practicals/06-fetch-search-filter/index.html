@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 6: Fetch JSON and Data Operations - StudentHub</title>
+  <link rel="stylesheet" href="../../css/common.css">
+  <script src="dataset-config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="auth-container">
+    <header class="page-title">
+      <p>Practical 6</p>
+      <h1>StudentHub Data Explorer</h1>
+      <p>Fetch students, events, and FAQs from JSON files, then search, filter, sort, and paginate the results.</p>
+    </header>
+
+    <section class="auth-card" aria-labelledby="controls-title">
+      <h2 id="controls-title">Explore JSON records</h2>
+      <div class="form-grid">
+        <div>
+          <label for="dataset-select">Data set</label>
+          <select id="dataset-select">
+            <option value="students">Students</option>
+            <option value="events">Events</option>
+            <option value="faqs">FAQs</option>
+          </select>
+        </div>
+        <div>
+          <label for="record-search">Search records</label>
+          <input id="record-search" type="search" autocomplete="off" placeholder="Search all visible fields">
+        </div>
+        <div>
+          <label for="record-filter">Filter by</label>
+          <select id="record-filter"><option value="">All</option></select>
+        </div>
+        <div>
+          <label for="sort-field">Sort by</label>
+          <select id="sort-field"></select>
+        </div>
+        <div>
+          <label for="sort-direction">Sort direction</label>
+          <select id="sort-direction">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+          </select>
+        </div>
+      </div>
+
+      <p id="load-status" class="form-message" role="status" aria-live="polite">Loading records…</p>
+      <div class="table-wrapper">
+        <table>
+          <caption id="result-count">JSON records</caption>
+          <thead id="record-head"></thead>
+          <tbody id="record-rows">
+            <tr><td>Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <nav class="pagination-controls" aria-label="Record pages">
+        <button id="previous-page" type="button" disabled>Previous</button>
+        <span id="page-status" aria-live="polite">Page 1 of 1</span>
+        <button id="next-page" type="button" disabled>Next</button>
+      </nav>
+      <p><a class="button" href="../../home.html">Back to StudentHub</a></p>
+    </section>
+  </main>
+</body>
+</html>

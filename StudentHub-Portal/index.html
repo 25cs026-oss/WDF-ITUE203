@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manage sample student records using the StudentHub JSON API.">
+  <title>Fetch API Student Records - StudentHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="student-api">
+    <header class="student-api-header">
+      <div>
+        <p class="eyebrow">Admin role</p>
+        <h1>Fetch API Student Records</h1>
+        <p>Manage student records using a PHP JSON API and the Fetch API.</p>
+      </div>
+      <a class="button secondary-button" href="admin_dashboard.php">Admin dashboard</a>
+    </header>
+
+    <section class="student-api-panel" aria-labelledby="student-form-title">
+      <h2 id="student-form-title">Add a student</h2>
+      <form id="student-form" class="student-api-form">
+        <label for="full-name">Full name
+          <input id="full-name" name="full_name" type="text" maxlength="100" autocomplete="name" required>
+        </label>
+        <label for="email">Email
+          <input id="email" name="email" type="email" maxlength="254" autocomplete="email" required>
+        </label>
+        <label for="course">Course
+          <input id="course" name="course" type="text" maxlength="100" required>
+        </label>
+        <div class="student-api-actions">
+          <button id="submit-button" type="submit">Add student</button>
+          <button id="cancel-edit" class="secondary-button" type="button" hidden>Cancel edit</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="student-api-panel" aria-labelledby="student-list-title">
+      <div class="student-list-heading">
+        <div>
+          <h2 id="student-list-title">Student list</h2>
+          <p id="record-count" class="student-record-count">Loading student records...</p>
+        </div>
+        <button id="refresh-button" class="secondary-button" type="button">Refresh list</button>
+      </div>
+      <p id="api-message" class="notice" role="status" aria-live="polite" hidden></p>
+      <div class="student-table-wrap">
+        <table class="student-table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Full name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Course</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="student-rows">
+            <tr><td class="student-api-empty" colspan="5">Loading records...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>

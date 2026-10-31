@@ -1,0 +1,17 @@
+[
+  {"full_name":"Aarav Patel","email":"aarav.patel@example.test","course":"B.Tech Computer Engineering","year":"Year 2"},
+  {"full_name":"Diya Shah","email":"diya.shah@example.test","course":"B.Tech Information Technology","year":"Year 1"},
+  {"full_name":"Rohan Mehta","email":"rohan.mehta@example.test","course":"Bachelor of Computer Applications","year":"Year 3"},
+  {"full_name":"Mira Desai","email":"mira.desai@example.test","course":"B.Tech Computer Engineering","year":"Year 1"},
+  {"full_name":"Kabir Joshi","email":"kabir.joshi@example.test","course":"B.Tech Information Technology","year":"Year 2"},
+  {"full_name":"Anaya Trivedi","email":"anaya.trivedi@example.test","course":"Bachelor of Computer Applications","year":"Year 2"},
+  {"full_name":"Ishaan Shah","email":"ishaan.shah@example.test","course":"B.Tech Computer Engineering","year":"Year 3"},
+  {"full_name":"Sara Patel","email":"sara.patel@example.test","course":"B.Tech Information Technology","year":"Year 3"},
+  {"full_name":"Vivaan Mehta","email":"vivaan.mehta@example.test","course":"Bachelor of Computer Applications","year":"Year 1"},
+  {"full_name":"Nisha Joshi","email":"nisha.joshi@example.test","course":"B.Tech Computer Engineering","year":"Year 2"},
+  {"full_name":"Arjun Desai","email":"arjun.desai@example.test","course":"B.Tech Information Technology","year":"Year 1"},
+  {"full_name":"Ira Trivedi","email":"ira.trivedi@example.test","course":"Bachelor of Computer Applications","year":"Year 3"},
+  {"full_name":"Reyansh Patel","email":"reyansh.patel@example.test","course":"B.Tech Computer Engineering","year":"Year 1"},
+  {"full_name":"Myra Shah","email":"myra.shah@example.test","course":"B.Tech Information Technology","year":"Year 2"},
+  {"full_name":"Dev Mehta","email":"dev.mehta@example.test","course":"Bachelor of Computer Applications","year":"Year 2"}
+]

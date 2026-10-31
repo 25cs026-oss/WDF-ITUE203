@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home - StudentHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/flexbox.css" />
+  </head>
+
+  <body>
+    <div class="container py-4">
+      <header class="mb-5">
+        <div class="header-controls">
+          <h1 class="display-1 fw-bold mb-3">StudentHub</h1>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle light and dark theme">Dark Mode</button>
+          <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation">&#9776; Menu</button>
+        </div>
+
+        <nav id="main-navigation" class="nav flex-wrap gap-3" aria-label="Main Navigation">
+          <a class="nav-link fs-4 p-0" href="pages/features.html">Features</a>
+          <a class="nav-link fs-4 p-0" href="pages/about.html">About</a>
+          <a class="nav-link fs-4 p-0" href="pages/contact-help.html">Contact/Help</a>
+          <a class="nav-link fs-4 p-0" href="login.php">Login</a>
+        </nav>
+      </header>
+
+      <div id="studenthub-banner" class="notification-banner" role="status" aria-live="polite">
+        <span>New semester events and notices are now available.</span>
+        <button type="button" class="notification-close" data-close-banner aria-label="Close notification">&times;</button>
+      </div>
+
+      <main>
+        <p id="homeMessage" class="form-message" role="status"></p>
+        <section class="mb-5">
+          <h2 class="display-4 fw-bold mb-4">Welcome to StudentHub</h2>
+
+          <p class="lead mb-4">
+            StudentHub is an online academic portal where students can access
+            courses, assignments, attendance, results, notices, timetable, and
+            study resources.
+          </p>
+
+          <a class="btn btn-link fs-3 p-0 text-decoration-none" href="pages/register.html">Register Now</a>
+        </section>
+
+        <section class="slider-panel" aria-label="StudentHub announcements">
+          <div class="slider" data-slider aria-live="polite" aria-atomic="true">
+            <article class="slide active" aria-hidden="false">
+              <h3>Semester Kickoff</h3>
+              <p>All classes and notices are now live on StudentHub for the new semester.</p>
+            </article>
+            <article class="slide" aria-hidden="true">
+              <h3>Important Events</h3>
+              <p>Students can check workshops, coding challenges, seminars and department events here.</p>
+            </article>
+            <article class="slide" aria-hidden="true">
+              <h3>Academic Updates</h3>
+              <p>Track assignments, attendance, results, and timetable updates from one dashboard.</p>
+            </article>
+          </div>
+          <div class="slider-controls">
+            <button type="button" class="slider-btn" data-slide-prev aria-label="Previous slide">Previous</button>
+            <button type="button" class="slider-btn" data-slide-next aria-label="Next slide">Next</button>
+          </div>
+        </section>
+
+        <section aria-labelledby="home-faq-title">
+          <h2 id="home-faq-title" class="display-5 fw-bold mb-4">Frequently Asked Questions</h2>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-controls="home-faq-answer-1" aria-expanded="false">How do I access my courses and timetable?</button>
+              <div class="faq-answer" id="home-faq-answer-1">
+                <p>Log in to StudentHub and open Courses or Timetable from the student dashboard.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-controls="home-faq-answer-2" aria-expanded="false">Where can I find the latest announcements?</button>
+              <div class="faq-answer" id="home-faq-answer-2">
+                <p>Check the Notices page for academic updates, deadlines, and campus announcements.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-controls="home-faq-answer-3" aria-expanded="false">How can I get help with my account?</button>
+              <div class="faq-answer" id="home-faq-answer-3">
+                <p>Visit Contact/Help for support information and answers to common questions.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="home-modal-title">
+          <h2 id="home-modal-title" class="display-5 fw-bold mb-3">Need a quick guide?</h2>
+          <p>Open a short guide to the main StudentHub services.</p>
+          <button type="button" class="modal-trigger" data-event-title="StudentHub Quick Guide" data-event-description="Use the dashboard to review your courses, attendance, assignments, results, and timetable. Visit Notices for updates or Contact/Help if you need support.">Open StudentHub Guide</button>
+        </section>
+
+        <section>
+          <h2 class="display-5 fw-bold mb-4">Quick Links</h2>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a class="text-decoration-none fs-4" href="pages/features.html">Features</a>
+            <a class="text-decoration-none fs-4" href="pages/about.html">About</a>
+            <a class="text-decoration-none fs-4" href="pages/contact-help.html">Contact / Help</a>
+            <a class="text-decoration-none fs-4" href="login.php">Login</a>
+            <a class="text-decoration-none fs-4" href="pages/events.html">Events</a>
+          </div>
+        </section>
+      </main>
+
+      <div class="event-modal" id="eventModal" aria-hidden="true">
+        <div class="event-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="eventModalTitle" tabindex="-1">
+          <button type="button" class="modal-close" data-close-modal aria-label="Close StudentHub guide">&times;</button>
+          <h2 id="eventModalTitle">StudentHub Guide</h2>
+          <p id="eventModalContent"></p>
+        </div>
+      </div>
+
+      <footer class="mt-5 text-muted">
+        <p class="mb-0 fs-5">&copy; 2026 StudentHub. All Rights Reserved.</p>
+      </footer>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/ui.js"></script>
+  </body>
+</html>

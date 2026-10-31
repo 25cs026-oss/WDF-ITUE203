@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Student Results - StudentHub</title>
+    <link rel="stylesheet" href="../../css/common.css" />
+    <script src="../../js/auth.js" defer></script>
+    <script src="../../js/ui.js" defer></script>
+</head>
+
+  <body data-protected="true">
+    <header class="site-header">
+      <h1><a href="../../home.html">StudentHub</a></h1>
+      <div class="header-controls">
+        <button type="button" class="theme-toggle" data-theme-toggle>Dark Mode</button>
+        <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation">&#9776; Menu</button>
+      </div>
+
+      <nav id="main-navigation" class="main-nav" aria-label="Authenticated Navigation">
+        <a href="dashboard.html">Dashboard</a><a href="profile.html">Profile</a><a href="courses.html">Courses</a><a href="faculty.html">Faculty</a><a href="attendance-tracking.html">Attendance</a><a href="assignments.html">Assignments</a><a href="results.html" aria-current="page">Results</a><a href="timetable.html">Timetable</a><a href="notices.html">Notices</a><a href="resources.html">Resources</a><button type="button" id="logoutButton" class="logout-button">Logout</button>
+      </nav>
+    </header>
+
+    <main class="container">
+
+      <nav aria-label="Breadcrumb">
+        <p>
+          <a href="../../home.html">Home</a> &gt;
+          <a href="dashboard.html">Dashboard</a> &gt;
+          Results
+        </p>
+      </nav>
+
+      <section>
+        <h2>Student Results</h2>
+        <p>View your examination results and academic performance.</p>
+      </section>
+
+      <section>
+        <h3>Result Summary</h3>
+
+        <table border="1">
+          <caption>Semester 3 Results</caption>
+
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>Grade</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Web Development</td>
+              <td>A</td>
+              <td>Pass</td>
+            </tr>
+
+            <tr>
+              <td>Programming in C</td>
+              <td>B+</td>
+              <td>Pass</td>
+            </tr>
+
+            <tr>
+              <td>Database Management</td>
+              <td>A-</td>
+              <td>Pass</td>
+            </tr>
+
+            <tr>
+              <td>Engineering Mathematics</td>
+              <td>B</td>
+              <td>Pass</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h3>Overall Performance</h3>
+
+        <p><strong>Semester:</strong> 3</p>
+        <p><strong>CGPA:</strong> 8.75</p>
+        <p><strong>Status:</strong> Passed</p>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

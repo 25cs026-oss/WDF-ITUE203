@@ -1,0 +1,86 @@
+.dashboard-grid,
+.summary-grid,
+.register-grid,
+.faculty-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.dashboard-card,
+.summary-card,
+.faculty-card {
+  padding: 20px;
+  border: 1px solid #bdd8ef;
+  border-radius: 8px;
+  background-color: #f0f7ff;
+}
+
+.dashboard-card {
+  color: #123d6a;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dashboard-card:hover,
+.dashboard-card:focus {
+  color: #ffffff;
+  background-color: #1769aa;
+}
+
+.summary-card {
+  text-align: center;
+}
+
+.summary-card h3,
+.faculty-card h3 {
+  margin-top: 0;
+}
+
+.summary-card p {
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.form-group label {
+  display: block;
+}
+
+.checkbox-group label {
+  font-weight: normal;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (min-width: 600px) {
+  .dashboard-grid,
+  .summary-grid,
+  .register-grid,
+  .faculty-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .summary-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .faculty-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

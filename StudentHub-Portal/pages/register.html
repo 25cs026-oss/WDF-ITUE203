@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - StudentHub</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <script src="../js/auth.js" defer></script>
+    <script src="../js/ui.js" defer></script>
+  </head>
+  <body data-auth-page="register">
+    <header class="site-header">
+      <div class="container">
+        <h1><a href="../home.html">StudentHub</a></h1>
+        <div class="header-controls">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle light and dark theme">Dark Mode</button>
+          <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation">&#9776; Menu</button>
+        </div>
+        <nav id="main-navigation" class="main-nav" aria-label="Main Navigation">
+          <a href="../home.html">Home</a>
+          <a href="features.html">Features</a>
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="contact-help.html">Contact/Help</a>
+          <a href="../login.php">Login</a>
+          <a href="register.html" aria-current="page">Register</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="auth-container">
+      <section class="page-title">
+        <h2>Student Registration</h2>
+        <p>Complete all fields to create your StudentHub account.</p>
+      </section>
+
+      <section class="auth-card">
+        <p id="registrationMessage" class="form-message" role="alert" aria-live="assertive" tabindex="-1"></p>
+        <form action="../process.php" method="POST" id="registrationForm" class="register-grid" novalidate>
+          <div class="form-group full-width">
+            <label for="student-name">Full Name</label>
+            <input id="student-name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="60" aria-describedby="student-name-error" />
+            <p class="field-error" id="student-name-error"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" autocomplete="username" required minlength="3" maxlength="30" pattern="[A-Za-z0-9_]{3,30}" aria-describedby="username-error" />
+            <small>Use 3–30 letters, numbers, or underscores.</small>
+            <p class="field-error" id="username-error"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="you@example.com" aria-describedby="email-error" />
+            <p class="field-error" id="email-error"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="mobile">Mobile Number</label>
+            <input id="mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" required minlength="8" maxlength="20" placeholder="+91 98765 43210" aria-describedby="mobile-error" />
+            <p class="field-error" id="mobile-error"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="course">Course</label>
+            <select id="course" name="course" required aria-describedby="course-error">
+              <option value="">Select your course</option>
+              <option value="B.Tech Computer Engineering">B.Tech Computer Engineering</option>
+              <option value="B.Tech Information Technology">B.Tech Information Technology</option>
+              <option value="Bachelor of Computer Applications">Bachelor of Computer Applications</option>
+            </select>
+            <p class="field-error" id="course-error"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="year">Year of Study</label>
+            <select id="year" name="year" required aria-describedby="year-error">
+              <option value="">Select your year</option>
+              <option value="Year 1">Year 1</option>
+              <option value="Year 2">Year 2</option>
+              <option value="Year 3">Year 3</option>
+              <option value="Year 4">Year 4</option>
+            </select>
+            <p class="field-error" id="year-error"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="new-password" required minlength="8" maxlength="64" aria-describedby="password-help password-strength password-error" />
+            <small id="password-help">Use 8–64 characters with uppercase, lowercase, a number, and a symbol.</small>
+            <div id="password-strength" class="password-strength" role="meter" aria-label="Password strength" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0">
+              <span class="password-strength-bar"></span>
+            </div>
+            <p class="strength-label" id="password-strength-label" aria-live="polite">Enter a password to check its strength.</p>
+            <p class="field-error" id="password-error"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password" required minlength="8" maxlength="64" aria-describedby="confirm-password-error" />
+            <p class="field-error" id="confirm-password-error"></p>
+          </div>
+
+          <fieldset class="form-group choice-group full-width" id="gender-group" aria-describedby="gender-error">
+            <legend>Gender</legend>
+            <div class="choice-options">
+              <label><input type="radio" name="gender" value="Female" required /> Female</label>
+              <label><input type="radio" name="gender" value="Male" /> Male</label>
+              <label><input type="radio" name="gender" value="Non-binary" /> Non-binary</label>
+              <label><input type="radio" name="gender" value="Prefer not to say" /> Prefer not to say</label>
+            </div>
+            <p class="field-error" id="gender-error"></p>
+          </fieldset>
+
+          <div class="checkbox-group full-width">
+            <input id="terms" name="terms" type="checkbox" required aria-describedby="terms-error" />
+            <label for="terms">I agree to the terms and conditions.</label>
+            <p class="field-error" id="terms-error"></p>
+          </div>
+
+          <div class="form-actions full-width">
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+        <p>Already registered? <a href="../login.php">Login here</a>.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>&copy; 2026 StudentHub. All Rights Reserved.</p></footer>
+  </body>
+</html>

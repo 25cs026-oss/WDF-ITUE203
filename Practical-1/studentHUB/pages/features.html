@@ -4,21 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Features - StudentHub</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <script src="../js/ui.js" defer></script>
 </head>
 <body>
 
-  <header>
-    <a href="../home.html">StudentHub</a>
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="../home.html">StudentHub</a></h1>
+      <div class="header-controls">
+        <button type="button" class="theme-toggle" data-theme-toggle>Dark Mode</button>
+        <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation">&#9776; Menu</button>
+      </div>
 
-    <nav>
-      <a href="features.html">Features</a>
-      <a href="about.html">About</a>
-      <a href="contact-help.html">Contact/Help</a>
-      <a href="login.html">Login</a>
-    </nav>
+      <nav id="main-navigation" class="main-nav" aria-label="Main Navigation">
+        <a href="../home.html">Home</a>
+        <a href="features.html" aria-current="page">Features</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="contact-help.html">Contact/Help</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="container">
     <section>
       <h1>Features</h1>
       <p>StudentHub is designed to help students manage their academic work in one place. It provides simple portal features that make it easier to stay updated with classes, tasks, results, and important information.</p>
@@ -65,9 +76,10 @@
       <p>StudentHub is planned as a simple and easy-to-use student portal. Its main purpose is to make academic information available in a structured and accessible way.</p>
       <p>The portal can be useful for students, faculty members, and administrators in future development stages.</p>
     </section>
+    <p><a class="button" href="login.html">Login to Access Student Portal</a></p>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>StudentHub Portal</p>
     <p>Email: support@studenthub.com</p>
     <p>Contact Admin: admin@studenthub.com</p>

@@ -1,0 +1,17 @@
+[
+  {"title":"Web Development Workshop","date":"2026-11-15","location":"Computer Lab 1","category":"Workshop"},
+  {"title":"Open Source Meetup","date":"2026-11-20","location":"Seminar Hall","category":"Community"},
+  {"title":"UI Design Showcase","date":"2026-11-25","location":"Main Auditorium","category":"Exhibition"},
+  {"title":"Campus Coding Challenge","date":"2026-12-02","location":"Innovation Lab","category":"Competition"},
+  {"title":"Career Planning Talk","date":"2026-12-05","location":"Seminar Hall","category":"Talk"},
+  {"title":"Database Design Lab","date":"2026-12-09","location":"Computer Lab 2","category":"Workshop"},
+  {"title":"Student Project Expo","date":"2026-12-12","location":"Main Auditorium","category":"Exhibition"},
+  {"title":"Technology Club Meetup","date":"2026-12-16","location":"Activity Room","category":"Community"},
+  {"title":"Frontend Skills Challenge","date":"2027-01-08","location":"Innovation Lab","category":"Competition"},
+  {"title":"Internship Preparation Session","date":"2027-01-13","location":"Seminar Hall","category":"Talk"},
+  {"title":"Accessible Web Design","date":"2027-01-17","location":"Computer Lab 1","category":"Workshop"},
+  {"title":"Open Data Showcase","date":"2027-01-22","location":"Main Auditorium","category":"Exhibition"},
+  {"title":"Alumni Developer Meetup","date":"2027-01-28","location":"Activity Room","category":"Community"},
+  {"title":"Algorithm Sprint","date":"2027-02-04","location":"Innovation Lab","category":"Competition"},
+  {"title":"Cloud Computing Seminar","date":"2027-02-10","location":"Seminar Hall","category":"Talk"}
+]

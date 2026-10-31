@@ -1,0 +1,17 @@
+[
+  {"question":"How do I reset my portal password?","answer":"Use the password reset link on the sign-in page and follow the instructions sent to your registered email.","category":"Account"},
+  {"question":"Where can I view my course timetable?","answer":"Open the Timetable page from the student navigation menu.","category":"Academics"},
+  {"question":"How do I contact the help desk?","answer":"Use the Contact and Help page to find the support form and service hours.","category":"Support"},
+  {"question":"Where are assignment deadlines listed?","answer":"The Assignments page lists current work and its due dates.","category":"Academics"},
+  {"question":"Can I update my profile details?","answer":"Open the Profile page and use the available account settings.","category":"Account"},
+  {"question":"Where can I find upcoming events?","answer":"The Events page displays current and upcoming campus activities.","category":"Events"},
+  {"question":"How can I find course resources?","answer":"Open the Resources page and select the materials for your course.","category":"Academics"},
+  {"question":"Who can access the admin dashboard?","answer":"Only accounts with the Admin role can open admin-only pages.","category":"Account"},
+  {"question":"How do I check attendance?","answer":"The Attendance page shows overall and subject-wise attendance information.","category":"Academics"},
+  {"question":"Where are exam results displayed?","answer":"Open the Results page to view the sample semester grades.","category":"Academics"},
+  {"question":"How do I report a portal issue?","answer":"Send a message through the Contact and Help page with a short description of the issue.","category":"Support"},
+  {"question":"Can I register for an event twice?","answer":"A student can have only one registration for the same event.","category":"Events"},
+  {"question":"Where can I read campus notices?","answer":"The Notices page contains the latest academic announcements.","category":"Campus"},
+  {"question":"How do I find faculty information?","answer":"The Faculty page lists sample faculty profiles and contact information.","category":"Campus"},
+  {"question":"Is the sample data real?","answer":"No. The names and records in this practical are fictional data for demonstration only.","category":"General"}
+]

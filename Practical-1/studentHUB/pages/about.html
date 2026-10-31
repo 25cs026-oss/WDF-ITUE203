@@ -1,67 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - StudentHub</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - StudentHub</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/flexbox.css" />
+    <script src="../js/ui.js" defer></script>
 </head>
-<body>
+  <body>
+    <header class="site-header">
+      <div class="container header-flex">
+        <h1><a href="../home.html">StudentHub</a></h1>
+      <div class="header-controls">
+        <button type="button" class="theme-toggle" data-theme-toggle>Dark Mode</button>
+        <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation">&#9776; Menu</button>
+      </div>
+        <nav id="main-navigation" class="main-nav" aria-label="Main Navigation">
+          <a href="../home.html">Home</a>
+          <a href="features.html">Features</a>
+          <a href="about.html" aria-current="page">About</a>
+          <a href="events.html">Events</a>
+          <a href="contact-help.html">Contact/Help</a>
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+        </nav>
+      </div>
+    </header>
 
-  <header>
-    <a href="../home.html">StudentHub</a>
+    <main class="container">
+      <section class="page-title">
+        <h2>About StudentHub</h2>
+        <p>
+          StudentHub is a simple academic management portal that keeps useful
+          student information organized and easy to access.
+        </p>
+      </section>
 
-    <nav>
-      <a href="features.html">Features</a>
-      <a href="about.html">About</a>
-      <a href="contact-help.html">Contact/Help</a>
-      <a href="login.html">Login</a>
-    </nav>
-  </header>
+      <section>
+        <h2>What StudentHub Offers</h2>
+        <div class="about-flex">
+          <article class="about-box">
+            <h3>Purpose</h3>
+            <p>
+              Provide one clear place for students to check daily academic
+              information without searching across different platforms.
+            </p>
+          </article>
+          <article class="about-box">
+            <h3>Main Features</h3>
+            <p>
+              Courses, attendance, assignments, results, timetables, notices,
+              resources, faculty contacts, and college events.
+            </p>
+          </article>
+          <article class="about-box">
+            <h3>Mission</h3>
+            <p>
+              Make academic information simple, accessible, responsive, and
+              useful for every student.
+            </p>
+          </article>
+        </div>
+      </section>
 
-  <main>
-    <section>
-      <h1>About StudentHub</h1>
-      <p>StudentHub is a simple academic management portal created to help students access important academic information in one place.</p>
-      <p>The portal is designed as a student-friendly system for managing daily academic activities such as attendance, assignments, results, notices, and timetable details.</p>
-    </section>
+      <section class="content-card">
+        <h2>Benefits for Students</h2>
+        <ul>
+          <li>Saves time by keeping academic information together.</li>
+          <li>Supports planning through timetables, notices, and due dates.</li>
+          <li>Works across mobile, tablet, and desktop screen sizes.</li>
+          <li>Provides quick access to faculty and support information.</li>
+        </ul>
+      </section>
+      <p><a class="button" href="login.html">Login to Access Student Portal</a></p>
+    </main>
 
-    <section>
-      <h2>Purpose of StudentHub</h2>
-      <p>The main purpose of StudentHub is to provide a centralized portal where students can quickly check their academic information without confusion.</p>
-      <p>It helps reduce the need to search across different platforms for attendance records, assignments, notices, and study resources.</p>
-    </section>
-
-    <section>
-      <h2>Who Can Use This Portal</h2>
-      <p>StudentHub is mainly designed for students, but it can also be useful for faculty members and administrators.</p>
-      <p>Students can view their academic records, faculty members can manage academic updates, and administrators can maintain the overall portal system.</p>
-    </section>
-
-    <section>
-      <h2>Main Modules</h2>
-      <p>The portal includes useful modules such as student login, dashboard, attendance tracking, assignment management, results, notices, timetable, and resources.</p>
-      <p>These modules are planned to make academic management easier, more organized, and more accessible.</p>
-    </section>
-
-    <section>
-      <h2>Benefits of StudentHub</h2>
-      <p>StudentHub saves time by keeping important academic information in a single portal. It supports students in staying updated with their work and improves communication between students and the institution.</p>
-      <p>The portal can also improve organization, planning, and regular monitoring of academic progress.</p>
-    </section>
-
-    <section>
-      <h2>Future Scope</h2>
-      <p>In future development, StudentHub can include database integration, user authentication, result analytics, notifications, event management, and mobile-friendly features.</p>
-      <p>This project can be expanded into a complete academic portal for real institutional use.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>StudentHub Portal</p>
-    <p>Email: support@studenthub.com</p>
-    <p>Contact Admin: admin@studenthub.com</p>
-    <p>&copy; 2026 StudentHub. All rights reserved.</p>
-  </footer>
-
-</body>
+    <footer class="site-footer">
+      <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+    </footer>
+  </body>
 </html>

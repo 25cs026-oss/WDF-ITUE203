@@ -6,22 +6,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Student Courses - StudentHub</title>
-  </head>
-  <body>
-    <header>
-      <a href="../../home.html">StudentHub</a>
+    <link rel="stylesheet" href="../../css/common.css" />
+    <script src="../../js/auth.js" defer></script>
+    <script src="../../js/ui.js" defer></script>
+</head>
 
-      <nav>
-        <a href="dashboard.html">Student Dashboard</a>
+  <body data-protected="true">
+    <header class="site-header">
+      <h1><a href="../../home.html">StudentHub</a></h1>
+      <div class="header-controls">
+        <button type="button" class="theme-toggle" data-theme-toggle>Dark Mode</button>
+        <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation">&#9776; Menu</button>
+      </div>
+
+      <nav id="main-navigation" class="main-nav" aria-label="Authenticated Navigation">
+        <a href="dashboard.html">Dashboard</a><a href="profile.html">Profile</a><a href="courses.html" aria-current="page">Courses</a><a href="faculty.html">Faculty</a><a href="attendance-tracking.html">Attendance</a><a href="assignments.html">Assignments</a><a href="results.html">Results</a><a href="timetable.html">Timetable</a><a href="notices.html">Notices</a><a href="resources.html">Resources</a><button type="button" id="logoutButton" class="logout-button">Logout</button>
       </nav>
     </header>
 
-    <main>
+    <main class="container">
+
+      <nav aria-label="Breadcrumb">
+        <p>
+          <a href="../../home.html">Home</a> &gt;
+          <a href="dashboard.html">Dashboard</a> &gt;
+          Courses
+        </p>
+      </nav>
+
       <section>
-        <p>Student Dashboard</p>
-        <h1>Courses</h1>
-        <p>List of enrolled courses and related details.</p>
+        <h2>My Courses</h2>
+
+        <p>
+          View your enrolled courses, instructors, credits, and course
+          information.
+        </p>
       </section>
+
+      <section>
+        <h2>Student Information</h2>
+
+        <ul>
+          <li><strong>Student Name:</strong> John Doe</li>
+          <li><strong>Student ID:</strong> STU101</li>
+          <li><strong>Program:</strong> Bachelor of Computer Applications</li>
+          <li><strong>Semester:</strong> Semester 3</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Enrolled Courses</h2>
+
+        <table border="1">
+          <caption>
+            Course List
+          </caption>
+
+          <thead>
+            <tr>
+              <th>Course Code</th>
+              <th>Course Name</th>
+              <th>Instructor</th>
+              <th>Credits</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>WD301</td>
+              <td>Web Development</td>
+              <td>Prof. ABC</td>
+              <td>4</td>
+              <td>Ongoing</td>
+            </tr>
+
+            <tr>
+              <td>C302</td>
+              <td>Programming in C</td>
+              <td>Prof. XYZ</td>
+              <td>3</td>
+              <td>Ongoing</td>
+            </tr>
+
+            <tr>
+              <td>DB303</td>
+              <td>Database Management</td>
+              <td>Prof. PQR</td>
+              <td>4</td>
+              <td>Ongoing</td>
+            </tr>
+
+            <tr>
+              <td>MA304</td>
+              <td>Engineering Mathematics</td>
+              <td>Prof. DEF</td>
+              <td>3</td>
+              <td>Completed</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Course Details</h2>
+
+        <article>
+          <h3>Web Development</h3>
+
+          <p>
+            Learn HTML5, CSS3, JavaScript, responsive web design, and
+            accessibility techniques for modern web applications.
+          </p>
+
+          <ul>
+            <li><strong>Duration:</strong> 16 Weeks</li>
+            <li><strong>Credits:</strong> 4</li>
+            <li><strong>Instructor:</strong> Prof. ABC</li>
+            <li><strong>Class Schedule:</strong> Monday & Wednesday</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Search Courses</h2>
+
+        <form action="courses.html" method="get">
+
+          <p>
+            <label for="course">Course Name</label><br />
+            <input
+              type="text"
+              id="course"
+              name="course"
+              placeholder="Enter course name"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="semester">Semester</label><br />
+            <select id="semester" name="semester" required>
+              <option value="">Select Semester</option>
+              <option>Semester 1</option>
+              <option>Semester 2</option>
+              <option>Semester 3</option>
+              <option>Semester 4</option>
+              <option>Semester 5</option>
+              <option>Semester 6</option>
+            </select>
+          </p>
+
+          <button type="submit">Search</button>
+          <button type="reset">Reset</button>
+
+        </form>
+      </section>
+
     </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>

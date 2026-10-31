@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard - StudentHub</title>
+  <link rel="stylesheet" href="../../css/common.css" />
+  <link rel="stylesheet" href="../../css/grid.css" />
+  <script src="../../js/auth.js" defer></script>
+  <script src="../../js/ui.js" defer></script>
+</head>
+<body data-protected="true">
+  <header class="site-header"><div class="container">
+    <h1><a href="../../home.html">StudentHub</a></h1>
+      <div class="header-controls">
+        <button type="button" class="theme-toggle" data-theme-toggle>Dark Mode</button>
+        <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation">&#9776; Menu</button>
+      </div>
+    <nav id="main-navigation" class="main-nav" aria-label="Authenticated Navigation">
+      <a href="dashboard.html" aria-current="page">Dashboard</a><a href="profile.html">Profile</a><a href="courses.html">Courses</a><a href="faculty.html">Faculty</a><a href="attendance-tracking.html">Attendance</a><a href="assignments.html">Assignments</a><a href="results.html">Results</a><a href="timetable.html">Timetable</a><a href="notices.html">Notices</a><a href="resources.html">Resources</a><button type="button" id="logoutButton" class="logout-button">Logout</button>
+    </nav>
+  </div></header>
+
+  <main class="container">
+    <section class="page-title">
+      <h2>Welcome, <span id="loggedInStudentName">Student</span></h2>
+      <p>Access your academic records, attendance, assignments, results, notices, resources, and student services.</p>
+    </section>
+
+    <section class="content-card">
+      <h2>Student Information</h2>
+      <ul>
+        <li><strong>Name:</strong> <span id="dashboardStudentName">Not available</span></li><li><strong>Student ID:</strong> <span id="dashboardStudentId">Not available</span></li>
+        <li><strong>Program:</strong> <span id="dashboardProgram">Not available</span></li><li><strong>Semester:</strong> <span id="dashboardSemester">Not available</span></li><li><strong>Email:</strong> <span id="dashboardEmail">Not available</span></li>
+      </ul>
+    </section>
+
+    <section class="content-card">
+      <h2>Academic Summary</h2>
+      <div class="summary-grid">
+        <article class="summary-card"><h3>Attendance</h3><p>91%</p></article>
+        <article class="summary-card"><h3>Pending Assignments</h3><p>2</p></article>
+        <article class="summary-card"><h3>Courses Enrolled</h3><p>5</p></article>
+        <article class="summary-card"><h3>Current CGPA</h3><p>8.75</p></article>
+      </div>
+    </section>
+
+    <section class="content-card">
+      <h2>Dashboard Menu</h2>
+      <nav class="dashboard-grid" aria-label="Dashboard Navigation">
+        <a class="dashboard-card" href="profile.html">Profile</a><a class="dashboard-card" href="courses.html">Courses</a>
+        <a class="dashboard-card" href="faculty.html">Faculty</a><a class="dashboard-card" href="attendance-tracking.html">Attendance</a>
+        <a class="dashboard-card" href="assignments.html">Assignments</a><a class="dashboard-card" href="results.html">Results</a>
+        <a class="dashboard-card" href="timetable.html">Timetable</a><a class="dashboard-card" href="notices.html">Notices</a>
+        <a class="dashboard-card" href="resources.html">Resources</a><a class="dashboard-card" href="../contact-help.html">Contact/Help</a>
+      </nav>
+    </section>
+
+    <section class="content-card">
+      <h2>Recent Announcements</h2>
+      <article><h3>Semester Examination Schedule</h3><p>The examination timetable is available. Check the Results and Timetable pages regularly.</p></article>
+      <article><h3>Assignment Submission Reminder</h3><p>Submit all pending assignments before their due dates.</p></article>
+    </section>
+
+    <section class="content-card">
+      <h2>Quick Search</h2>
+      <form action="dashboard.html" method="get">
+        <label for="search">Search Dashboard</label>
+        <input type="search" id="search" name="search" placeholder="Search courses, notices, assignments..." required />
+        <p><button type="submit">Search</button> <button type="reset">Clear</button></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><p>&copy; 2026 StudentHub. All Rights Reserved.</p></footer>
+</body>
+</html>

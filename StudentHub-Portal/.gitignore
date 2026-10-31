@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+*.log
+data/registrations.json
+practicals/07-php-json-storage/storage/registrations.json
+uploads/event-posters/*
+!uploads/event-posters/.htaccess
+practicals/08-node-express-api/node_modules/

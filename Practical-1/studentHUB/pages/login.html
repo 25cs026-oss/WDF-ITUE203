@@ -1,46 +1,39 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login - StudentHub</title>
+  <link rel="stylesheet" href="../css/common.css" />
+  <script src="../js/auth.js" defer></script>
+  <script src="../js/ui.js" defer></script>
 </head>
-<body>
-
-  <header>
-    <a href="../home.html">StudentHub</a>
-
-    <nav>
-      <a href="features.html">Features</a>
-      <a href="about.html">About</a>
-      <a href="contact-help.html">Contact/Help</a>
-      <a href="register.html">Register</a>
+<body data-auth-page="login">
+  <header class="site-header"><div class="container">
+    <h1><a href="../home.html">StudentHub</a></h1>
+      <div class="header-controls">
+        <button type="button" class="theme-toggle" data-theme-toggle>Dark Mode</button>
+        <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-navigation">&#9776; Menu</button>
+      </div>
+    <nav id="main-navigation" class="main-nav" aria-label="Public Navigation">
+      <a href="../home.html">Home</a><a href="features.html">Features</a><a href="about.html">About</a><a href="events.html">Events</a><a href="contact-help.html">Contact/Help</a><a href="login.html" aria-current="page">Login</a><a href="register.html">Register</a>
     </nav>
-  </header>
+  </div></header>
 
-  <main>
-    <h1>Student Login</h1>
-    <p>Enter your enrollment number and password to continue.</p>
-
-    <form action="student/dashboard.html">
-      <label for="enrollment">Enrollment Number</label><br>
-      <input type="text" id="enrollment" name="enrollment" required><br><br>
-
-      <label for="password">Password</label><br>
-      <input type="password" id="password" name="password" required><br><br>
-
-      <button type="submit">Login</button>
-    </form>
-
-    <p>Not registered? <a href="register.html">Register here</a></p>
+  <main class="auth-container">
+    <section class="auth-card">
+      <h2>Student Login</h2>
+      <p>Enter your registered college email and password.</p>
+      <p id="loginMessage" class="form-message" role="alert" aria-live="polite"></p>
+      <form id="loginForm">
+        <div class="form-group"><label for="loginEmail">College Email</label><input type="email" id="loginEmail" name="email" required /></div>
+        <div class="form-group"><label for="loginPassword">Password</label><input type="password" id="loginPassword" name="password" required /></div>
+        <div class="checkbox-group form-group"><input type="checkbox" id="rememberEmail" name="rememberEmail" /> <label for="rememberEmail">Remember email</label></div>
+        <div class="form-actions"><button type="submit">Login</button><button type="reset">Reset</button></div>
+      </form>
+      <p>New student? <a href="register.html">Create an account</a>.</p>
+    </section>
   </main>
-
-  <footer>
-    <p>StudentHub Portal</p>
-    <p>Email: support@studenthub.com</p>
-    <p>Contact Admin: admin@studenthub.com</p>
-    <p>&copy; 2026 StudentHub. All rights reserved.</p>
-  </footer>
-
+  <footer class="site-footer"><p>&copy; 2026 StudentHub. All Rights Reserved.</p></footer>
 </body>
 </html>
