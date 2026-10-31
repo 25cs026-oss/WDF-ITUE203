@@ -9,6 +9,7 @@ Web Development Frameworks (ITUE203) practical sequence.
 ```text
 Practical-1/                 Original planning, sitemap, and starter submission
   studentHUB/                 Original starter pages (retained for comparison)
+Practical-Reports/            Supplied Practical 3–15 submission PDFs
 StudentHub-Portal/            Integrated source for Practicals 1–15
   practicals/                 Standalone Practical 6, 7, and 8 demonstrations
   test-report/                Screenshots and practical/final reports
@@ -40,7 +41,13 @@ the local URL.
 | 12 | Event CRUD and validated poster upload | [`event_management.php`](./StudentHub-Portal/event_management.php), [report](./StudentHub-Portal/test-report/events/TEST-REPORT.md) | [PDF](./Practical-Reports/25CS026_WDF_Practical_12.pdf) |
 | 13 | PHP JSON API and Fetch CRUD | [`api.php`](./StudentHub-Portal/api.php), [`script.js`](./StudentHub-Portal/script.js), [report](./StudentHub-Portal/test-report/fetch-api/TEST-REPORT.md) | [PDF](./Practical-Reports/25CS026_WDF_Practical_13.pdf) |
 | 14 | Admin dashboard, RBAC, dynamic menu, audit log | [`dashboard.php`](./StudentHub-Portal/dashboard.php), [`audit_logs.php`](./StudentHub-Portal/audit_logs.php), [report](./StudentHub-Portal/test-report/dashboard/TEST-REPORT.md) | [PDF](./Practical-Reports/25CS026_WDF_Practical_14.pdf) |
-| 15 | Integration, tests, documentation, GitHub submission, local deployment | [final submission report](./StudentHub-Portal/test-report/FINAL-SUBMISSION-REPORT.md), [setup guide](./StudentHub-Portal/README.md) | Final report in StudentHub-Portal |
+| 15 | Integration, tests, documentation, GitHub submission, local deployment | [final submission report](./StudentHub-Portal/test-report/FINAL-SUBMISSION-REPORT.md), [setup guide](./StudentHub-Portal/README.md) | [PDF](./Practical-Reports/25CS026_WDF_Practical_15.pdf) |
+
+`Practical-Reports/25CS026_WDF_Practical_15.pdf` is the corrected submission
+copy: the GitHub checklist identifies the repository as private, matching the
+requested repository visibility. Its demo login credentials are fictional,
+work with the hashed sample accounts in the SQL dump, and are for local
+demonstration only. The original source PDF is left unchanged.
 
 ### Practical Report Files
 

@@ -79,9 +79,12 @@ demonstration environment.
 
 ## Practical PDFs
 
-The supplied Practical 3–14 PDF reports are retained in the repository's
-`Practical-Reports/` folder. Practical 1 planning/source files are in
-`Practical-1/`; Practical 2 is represented by the semantic site pages and
-project guide; Practical 15 is this integration report. The Practical 8 PDF
-contains conflicting Express and PHP/MySQL requirements; the implementation
-and README document how both sets are covered.
+The supplied Practical 3–15 PDF reports are retained in the repository's
+`Practical-Reports/` folder, including the [Practical 15 final submission PDF](../../Practical-Reports/25CS026_WDF_Practical_15.pdf).
+The Practical 15 PDF states that the GitHub repository is private, matching
+the requested repository. Its listed demo login credentials match the
+password hashes for the fictional sample accounts in the SQL dump. Practical
+1 planning/source files are in `Practical-1/`; Practical 2 is represented by
+the semantic site pages and project guide. The Practical 8 PDF contains
+conflicting Express and PHP/MySQL requirements; the implementation and README
+document how both sets are covered.
